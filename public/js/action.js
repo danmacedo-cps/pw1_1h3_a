@@ -18,7 +18,7 @@ function calculaNumeros(){
         resultado = Math.sqrt(n1+n2)
         alert("Raiz: "+resultado)
     }else if(op === "pw"){
-        resultado = Math.pw(n1+n2)
+        resultado = Math.pow(n1,n2)
         alert("Raiz: "+resultado)
     }
     
