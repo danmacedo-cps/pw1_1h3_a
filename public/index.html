@@ -31,18 +31,29 @@
                         <div class="container">
                             <label for="usuario">
                                 <span>Nome de Usúario</span>
-                                <input class="form-control form-control-lg" type="text" placeholder="digite seu usuario"
+                                <input id="usuario" class="form-control form-control-lg" type="text" placeholder="digite seu usuario"
                                     aria-label=".form-control-lg example">
                             </label>
                             <label for="senha">
                                 <span>Senha</span>
-                                <input class="form-control form-control-lg" type="password"
+                                <input id="senha" class="form-control form-control-lg" type="text"
                                     placeholder="digite sua senha" aria-label=".form-control-lg example">
+                            </label>
+                            <label for="operation">
+                                <span>operação matemática</span>
+                                <select class="form-control form-control-lg" id="operation">
+                                    <option value="+">Soma</option>
+                                    <option value="-">Subtração</option>
+                                    <option value="*">Multiplicação</option>
+                                    <option value="/">Divisão</option>
+                                    <option value="sqrt">Raiz</option>
+                                    <option value="pw">Potência</option>
+                                </select>
                             </label>
                         </div>
                         <div class="d-grid gap-2 gp-login" >
-                            <button class="btn btn-primary" type="button" onclick="somaNumero(15, 22, 'j')">Login</button>
-                            <button class="btn btn-primary" type="button" onclick="somaNumero(15, 22, 'h')">Cadastrar</button>
+                            <button class="btn btn-primary" type="button" onclick="calculaNumeros()">Login</button>
+                            <button class="btn btn-primary" type="button" onclick="calculaNumeros()">Cadastrar</button>
                         </div>
                     </div>
                 </div>
